@@ -1,0 +1,85 @@
+server:
+  port: 8096
+
+spring:
+  application:
+    name: ci-jiratool
+  mail:
+    host: mx.mgpost.imgo.tv
+    username: jira-admin@mgpost.imgo.tv
+    default-encoding: UTF-8
+    port: 25
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: false
+        transport:
+          protocol: smtp
+    
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8111/eureka/
+      
+logging:
+  file: logs/${spring.application.name}.log
+
+jira:
+  release:
+    project:
+      key: RELEASE
+      issue:
+        type: 10303
+        transition: 111
+        sub:
+          type: 10304
+          transition: 331
+    superman: 叶静涛
+  techqa:
+    project:
+      key: TECHQA
+      issue:
+        type: 10311
+        sub:
+          type: 5
+  alarm:
+    project:
+      key: ALARM
+      issue:
+        type: 10306
+    calmdown: -12
+  opop:
+    project:
+      key: OPOP
+      issue:
+        type: 10217
+  fault:
+    import:
+      file: C:\\tmp\\import.xlsx
+    email:
+      from :
+        username: wenhao@mgtv.com
+        displayname: 刘文浩
+      to:
+        person: wenhao@mgtv.com
+        group: issue@mgtv.com
+    project:
+      key: FAULT
+      issue:
+        type: 10202
+  baseUrl: http://jira.imgo.tv
+  default:
+    reporter: autox
+    cc: jingtao@mgtv.com
+    
+package:
+  address:
+    haoming: http://10.100.3.59/code
+    other: http://10.100.4.85
+
+feign:
+  hystrix:
+    enabled: false
+  

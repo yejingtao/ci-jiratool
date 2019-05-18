@@ -1,0 +1,33 @@
+<div id="container" style="width:500px">
+
+<div id="header" style="background-color:#FFFFFF;text-align:center;">
+<h3 style="margin-bottom:0;">${title}</h3></div>
+
+<div id="content" style="background-color:#FFFFFF;float:center;">
+<br />
+<br />
+<strong>操作目的:</strong>
+${opTarget}
+<strong>操作方案:</strong><br />
+${opSchema}
+<strong>操作风险:</strong>
+${opRisk}
+<strong>可能影响的业务:</strong>&nbsp;&nbsp;${implicated}
+<br />
+<strong>应急预案:</strong>&nbsp;&nbsp;${planb}
+<br />
+<strong>计划操作时间:</strong>&nbsp;&nbsp;${opTime}
+<br />
+<br />
+<strong>方案Review人:</strong>&nbsp;&nbsp;${reviewer}<br />
+<strong>操作执行人:</strong>&nbsp;&nbsp;${operator}<br />
+<strong>验证负责人:</strong>&nbsp;&nbsp;${tester}<br />
+<strong>开发负责人:</strong>&nbsp;&nbsp;${developer}<br />
+</p>
+<p>
+jira链接：<a href="http://jira.imgo.tv/browse/${key}">${key}</a>
+</div>
+<div id="footer" style="background-color:#FFFFFF;clear:both;text-align:right;">
+<i>该邮件由运维小管家自动生成@技术中心系统运营部</i></div>
+
+</div>

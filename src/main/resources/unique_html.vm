@@ -1,0 +1,22 @@
+<div id="container" style="width:500px">
+
+<div id="header" style="background-color:#FFFFFF;text-align:center;">
+<h3 style="margin-bottom:0;">需求上线转交运维人工校验</h3></div>
+
+<div id="content" style="background-color:#FFFFFF;float:center;">
+<p>
+您所发起的需求上线任务疑似重复功能，已转交业务运维${user}人工审核，请耐心等待。
+</p>
+<p>
+需求上线"上线版本号"不允许重复，需求上线"回滚版本号"不允许重复.
+<br />
+如果是同一需求失败后的多次提交请在此前主任务中直接创建"版本上线"子任务；
+</p>
+<p>
+jira链接：<a href="http://jira.imgo.tv/browse/${key}">${key}</a>
+</p>
+</div>
+<div id="footer" style="background-color:#FFFFFF;clear:both;text-align:right;">
+<i>该邮件由运维小管家自动生成@技术中心系统运营部</i></div>
+
+</div>

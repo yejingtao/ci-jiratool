@@ -1,0 +1,31 @@
+<div id="container" style="width:500px">
+
+<div id="header" style="background-color:#FFFFFF;text-align:center;">
+<h3 style="margin-bottom:0;">${title}</h3></div>
+
+<div id="content" style="background-color:#FFFFFF;float:center;">
+<br />
+<br />
+<strong>需求描述:</strong>
+${detail}
+<br />
+<strong>项目地址:</strong> ${git}
+<br />
+<strong>上线版本:</strong>  ${onlineVersion}
+<br />
+<strong>回滚版本:</strong> ${rollbackVersion}
+<br />
+<br />
+<strong>上线发起人:</strong>  ${reporter}<br />
+<strong>需求审批人:</strong> ${approver}<br />
+<strong>上线执行人:</strong>  ${operator}<br />
+<strong>上线验证负责人:</strong>  ${tester}<br />
+<br />
+jira链接：<a href="http://jira.imgo.tv/browse/${key}">${key}</a>
+</p>
+<br />
+</div>
+<div id="footer" style="background-color:#FFFFFF;clear:both;text-align:right;">
+<i>该邮件由运维小管家自动生成@技术中心系统运营部</i></div>
+
+</div>

@@ -1,0 +1,8 @@
+发起人:  ${reporter}
+
+项目地址:  ${git}
+
+新版本:  ${version}
+
+需求描述:
+${detail}

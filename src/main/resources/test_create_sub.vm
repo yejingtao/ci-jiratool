@@ -1,0 +1,34 @@
+<div id="container" style="width:500px">
+
+<div id="header" style="background-color:#FFFFFF;text-align:center;">
+<h3 style="margin-bottom:0;">${title}</h3></div>
+
+<div id="content" style="background-color:#FFFFFF;float:center;">
+<br />
+<br />
+<strong>项目名称：</strong>
+${testProject}
+<br />
+<br />
+<strong>测试人员：</strong>
+${tester}
+<br />
+<br />
+<strong>上线时间：</strong>
+${onlineTime}
+<br />
+<br />
+<strong>测试轮次：</strong>
+${testRound}
+<br />
+<br />
+<strong>工单描述</strong>&nbsp;&nbsp;${testDescribe}
+<br />
+</p>
+<p>
+jira链接：<a href="http://jira.imgo.tv/browse/${key}">${key}</a>
+</div>
+<div id="footer" style="background-color:#FFFFFF;clear:both;text-align:right;">
+<i>该邮件由运维小管家自动生成@技术中心系统运营部</i></div>
+
+</div>

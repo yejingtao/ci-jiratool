@@ -1,0 +1,64 @@
+<div id="container" style="width:500px">
+
+<div id="header" style="background-color:#FFFFFF;text-align:center;">
+<h3 style="margin-bottom:0;">${title}</h3></div>
+
+<div id="content" style="background-color:#FFFFFF;float:center;">
+<br />
+<strong>故障描述:</strong>&nbsp;&nbsp;
+${title}
+<br />
+<strong>开始时间:</strong>&nbsp;&nbsp;
+${startTime}
+<br />
+<strong>结束时间:</strong>&nbsp;&nbsp;
+${endTime}
+<br />
+<strong>发现时间:</strong>&nbsp;&nbsp;
+${findTime}
+<br />
+<strong>故障持续时间(分钟):</strong>&nbsp;&nbsp;
+${faultAllMinute}
+<br />
+<strong>故障等级:</strong>&nbsp;&nbsp;
+${faultLevel}
+<br />
+<strong>影响业务:</strong>&nbsp;&nbsp;
+${impactBusiness}
+<br />
+<strong>故障现象:</strong>&nbsp;&nbsp;
+${faultDescription}
+<br />
+<strong>故障原因:</strong>&nbsp;&nbsp;
+${faultCause}
+<br />
+<strong>影响用户数:</strong>&nbsp;&nbsp;
+${impactNumber}
+<br />
+<strong>影响范围:</strong>&nbsp;&nbsp;
+${impactArea}
+<br />
+#if($detailProcess)
+<strong>处理过程:</strong>&nbsp;&nbsp;
+<br />
+${detailProcess}
+#end
+<br />
+<br />
+<strong>临时改进措施:</strong>
+<br />
+${temporaryImprove}
+<br />
+<br />
+<strong>长期改进措施:</strong>
+<br />
+${stationaryImprove}
+<br />
+<br />
+<p>
+jira链接：<a href="http://jira.imgo.tv/browse/${key}">${key}</a>
+</div>
+<div id="footer" style="background-color:#FFFFFF;clear:both;text-align:right;">
+<i>该邮件由运维小管家自动生成@技术中心系统运营部</i></div>
+
+</div>
